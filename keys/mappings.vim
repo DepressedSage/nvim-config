@@ -1,6 +1,9 @@
 let g:mapleader = " "
 nnoremap <leader>m :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
 
+"keybind to open startify"
+nnoremap <A-s> :Startify<CR>
+
 "keybind to close current buffer withsaving
 nnoremap wq :w<bar>bd<CR>
 

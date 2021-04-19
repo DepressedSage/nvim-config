@@ -19,7 +19,6 @@ set laststatus=0                        " Always display the status line
 set cursorline
 set number                              " Line numbers
 set relativenumber
-set guicursor=
 set nohlsearch
 set noerrorbells
 set incsearch
