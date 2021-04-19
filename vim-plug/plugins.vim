@@ -37,4 +37,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     Plug 'mhinz/vim-startify'
+
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/nvim-compe'
+    Plug 'glepnir/lspsaga.nvim'
 call plug#end()
