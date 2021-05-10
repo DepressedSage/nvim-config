@@ -9,7 +9,7 @@ let g:startify_session_autoload = 1
 let g:startify_change_to_vcs_root = 1
 let g:startify_session_persistence = 1
 let g:startify_enable_special = 0
-let g:startify_custom_header =[
+let g:startify_custom_header = [
 \'      ___           ___           ___           ___                       ___     ',
 \'     /\__\         /\  \         /\  \         /\__\          ___        /\__\    ',
 \'    /::|  |       /::\  \       /::\  \       /:/  /         /\  \      /::|  |   ',
@@ -22,10 +22,6 @@ let g:startify_custom_header =[
 \'     /:/  /       \:\__\        \::/  /       ~~~~         \/__/         /:/  /   ',
 \'     \/__/         \/__/         \/__/                                   \/__/    ',
 \]
-
-
-
-
 
 
 

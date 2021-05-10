@@ -22,7 +22,7 @@ set relativenumber
 set nohlsearch
 set noerrorbells
 set incsearch
-set scrolloff=20
+set scrolloff=22
 set signcolumn=yes
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
