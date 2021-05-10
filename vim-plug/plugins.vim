@@ -8,6 +8,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    Plug 'drewtempelmeyer/palenight.vim'
+
+    Plug 'norcalli/nvim-colorizer.lua'
+
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
@@ -23,7 +27,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+
 
     Plug 'nvim-lua/plenary.nvim'
 
@@ -38,7 +43,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
     Plug 'mhinz/vim-startify'
 
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'hrsh7th/nvim-compe'
     Plug 'glepnir/lspsaga.nvim'
 call plug#end()
+
+
+
