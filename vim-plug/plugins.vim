@@ -8,7 +8,13 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Themes
     Plug 'drewtempelmeyer/palenight.vim'
+    Plug 'morhetz/gruvbox'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'owozsh/amora'
+    Plug 'ghifarit53/tokyonight-vim'
+
 
     Plug 'norcalli/nvim-colorizer.lua'
 
@@ -19,7 +25,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
 
-    Plug 'morhetz/gruvbox'
 
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
