@@ -8,6 +8,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+<<<<<<< HEAD
     " Themes
     Plug 'drewtempelmeyer/palenight.vim'
     Plug 'morhetz/gruvbox'
@@ -15,6 +16,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'owozsh/amora'
     Plug 'ghifarit53/tokyonight-vim'
 
+=======
+    Plug 'drewtempelmeyer/palenight.vim'
+>>>>>>> c81230c478b2feaaeb72f656aee36b0e8fb0df8a
 
     Plug 'norcalli/nvim-colorizer.lua'
 
