@@ -7,16 +7,11 @@ source $HOME/.config/nvim/general/titlebar.vim
 source $HOME/.config/nvim/plug-config/NERDtree.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/startify.vim
-<<<<<<< HEAD
 "source $HOME/.config/nvim/themes/palenight.vim
 "source $HOME/.config/nvim/themes/tokyonight.vim
 "source $HOME/.config/nvim/themes/amora.vim
 "source $HOME/.config/nvim/themes/nord.vim
 source $HOME/.config/nvim/themes/gruvbox.vim
-=======
-source $HOME/.config/nvim/themes/palenight.vim
-"source $HOME/.config/nvim/themes/gruvbox.vim
->>>>>>> c81230c478b2feaaeb72f656aee36b0e8fb0df8a
 "lua require'plug-colorizer'
 
 if (has("nvim"))
@@ -24,12 +19,9 @@ if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
 
-<<<<<<< HEAD
-=======
 "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
 "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
 " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
->>>>>>> c81230c478b2feaaeb72f656aee36b0e8fb0df8a
 if (has("termguicolors"))
   set termguicolors
 endif
