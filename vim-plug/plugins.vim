@@ -18,6 +18,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'drewtempelmeyer/palenight.vim'
 
     Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'junegunn/goyo.vim'
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -26,7 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
 
-
+    Plug 'voldikss/vim-floaterm'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -48,6 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     Plug 'mhinz/vim-startify'
+    Plug 'glepnir/dashboard-nvim'
 
     Plug 'glepnir/lspsaga.nvim'
 call plug#end()
