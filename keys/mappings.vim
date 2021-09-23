@@ -1,5 +1,13 @@
-let g:mapleader = " "
-nnoremap <leader>m :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
+let mapleader = "\<Space>"
+nnoremap <leader>s :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
+
+"Telescope Keybinds
+nnoremap <leader>tt <cmd>Telescope <cr>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fb <cmd>Telescope file_browser<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>bb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 "keybind to close the current buffer
 nnoremap qq :bd<CR>
@@ -37,3 +45,8 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap < <gv
 vnoremap > >gv
 
+" Coc autocompletion
+inoremap <tab> <C-n>
+
+" Startify
+nnoremap <M-s> :Startify<CR>

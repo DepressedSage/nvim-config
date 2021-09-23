@@ -8,6 +8,7 @@ set iskeyword+=-                      	" treat dash separated words as a word te
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
+set termguicolors
 set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=4   softtabstop=4                        " Insert 2 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
@@ -34,6 +35,7 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
+highlight Normal guibg=none
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
