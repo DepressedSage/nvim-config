@@ -10,10 +10,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "Python dev
     " Java-Script Dev
-    Plug 'pangloss/vim-javascript' "JS Syntax Highlighting
-    Plug 'maxmellon/vim-jsx-pretty' "JSX Syntax Highlighting
-    Plug 'leafgarland/typescript-vim' " TypeScript Highlighting
-    Plug 'peitalin/vim-jsx-typescript' " TSX Syntax Highlighting
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
@@ -35,16 +31,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'honza/vim-snippets'
 
-    Plug 'nvim-telescope/telescope-fzy-native.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
-    Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-lua/popup.nvim'
 
     Plug 'vim-airline/vim-airline'
-
     Plug 'vim-airline/vim-airline-themes'
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
+    Plug 'tpope/vim-fugitive'
 call plug#end()

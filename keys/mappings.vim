@@ -3,7 +3,7 @@ nnoremap <leader>s :lua require('telescope.builtin').grep_string({ search = vim.
 
 "Telescope Keybinds
 nnoremap <leader>tt <cmd>Telescope <cr>
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap<leader>ff  <cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", default_opts)
 nnoremap <leader>fb <cmd>Telescope file_browser<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>bb <cmd>Telescope buffers<cr>
