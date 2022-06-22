@@ -8,36 +8,39 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    "Python dev
-    " Java-Script Dev
+    " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-
-    Plug 'mhinz/vim-startify'
-
-    "Themes
+    " color matching parenthesis
+    Plug 'luochen1990/rainbow'
+    let g:rainbow_active = 1
+    " color themes
     Plug 'morhetz/gruvbox'
-    "Plug 'arcticicestudio/nord-vim'
-   " Plug 'rakr/vim-one'
-
+    Plug 'joshdick/onedark.vim'
+    Plug 'KeitaNakamura/neodark.vim'
+    " nerdtree plugins
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'honza/vim-snippets'
+
+    Plug 'nvim-telescope/telescope.nvim'
+
+    Plug 'nvim-lua/plenary.nvim'
 
     Plug 'nvim-lua/popup.nvim'
 
     Plug 'vim-airline/vim-airline'
+
     Plug 'vim-airline/vim-airline-themes'
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
-    Plug 'tpope/vim-fugitive'
+    Plug 'mhinz/vim-startify'
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()

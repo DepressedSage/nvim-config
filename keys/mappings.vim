@@ -1,13 +1,5 @@
-let mapleader = "\<Space>"
-nnoremap <leader>s :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
-
-"Telescope Keybinds
-nnoremap <leader>tt <cmd>Telescope <cr>
-nnoremap<leader>ff  <cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", default_opts)
-nnoremap <leader>fb <cmd>Telescope file_browser<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>bb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+let g:mapleader = " "
+nnoremap <leader>m :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
 
 "keybind to close the current buffer
 nnoremap qq :bd<CR>
@@ -38,6 +30,7 @@ nnoremap <S-TAB> :bprevious<CR>
 nnoremap <C-s> :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
+
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -45,8 +38,3 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap < <gv
 vnoremap > >gv
 
-" Coc autocompletion
-inoremap <tab> <C-n>
-
-" Startify
-nnoremap <M-s> :Startify<CR>
