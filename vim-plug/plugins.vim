@@ -31,7 +31,6 @@ Plug 'morhetz/gruvbox'
 " Plug 'rakr/vim-one'
 "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
-"Plug 'Xuyuanp/nerdtree-git-plugin'
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
