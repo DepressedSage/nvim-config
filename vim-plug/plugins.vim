@@ -11,6 +11,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 "Python dev
 " Java-Script Dev
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 Plug 'sheerun/vim-polyglot'
 " File Explorer
 "Plug 'scrooloose/NERDTree'
